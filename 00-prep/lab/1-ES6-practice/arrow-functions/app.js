@@ -190,8 +190,8 @@ console.log(joe.scopeArrow());
 
 // TODO: Write a COMMENT below to answer the following questions.
 // 1. What is "this" when joe.scope() is invoked?
-//  this refereces to nothing in this because prototype does not work within arrow function. this only works for object type consturctors and not function constructors.
+//  this refereces the instance of joe
 // 2. What is "this" when joe.scopeArrow() is invoked?
-// his refereces to nothing in this because prototype does not work within arrow function. this only works for object type consturctors and not function constructors.
+// this is refering to the Window, the highest level of scope
 // 3. Explain why "this" is different when an arrow function is used.
-// this only works for object type consturctors and not function constructors.
+// Because arrow functions' scope "bubbles" up one level, in this case it bubbles up to the highest level of scope: Window
